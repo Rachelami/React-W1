@@ -1,15 +1,15 @@
 import React from "react";
-// import logo from './logo.svg';
 import "./App.css";
-import List from "./component/List";
+// import List from "./component/List";
+import Box from "./component/Box";
 
 function App() {
 	return (
 		<div className="App">
 			<header className="App-header">
-				{/* <img src={logo} className="App-logo" alt="logo" /> */}
 				<p>
-        <List name={"My Name"}></List>
+        {/* <List name={"My Name"}></List> */}
+        <Box name={"My Name"}></Box>
           </p>
 				<a
 					className="App-link"
