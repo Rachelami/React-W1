@@ -2,22 +2,24 @@ import React from "react";
 import "./App.css";
 // import List from "./component/List";
 // import Box from "./component/Box";
-import Navbar from "./component/Navbar";
-import MiddleText from "./component/MiddleText";
-import Column from "./component/Column";
+// import Navbar from "./component/Navbar";
+// import MiddleText from "./component/MiddleText";
+// import Column from "./component/Column";
+import UserList from "./component/UserList";
+
 
 function App() {
 	return (
     <div className="App">
-    <Navbar></Navbar>
+    {/* <Navbar></Navbar> */}
       
 			<header className="App-header">
 				<p>
 					{/* <List name={"My Name"}></List> */}
 					{/* <Box name={"My Name"}></Box> */}
-          <MiddleText></MiddleText>
-          <Column></Column>
-					
+          {/* <MiddleText></MiddleText> */}
+          {/* <Column></Column> */}
+					<UserList></UserList>
 				</p>
 				{/* <a
 					className="App-link"
