@@ -5,7 +5,8 @@ import "./App.css";
 // import Navbar from "./component/Navbar";
 // import MiddleText from "./component/MiddleText";
 // import Column from "./component/Column";
-import UserList from "./component/UserList";
+// import UserList from "./component/UserList";
+import Alive from "./component/Alive";
 
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
 					{/* <Box name={"My Name"}></Box> */}
           {/* <MiddleText></MiddleText> */}
           {/* <Column></Column> */}
-					<UserList></UserList>
+					{/* <UserList></UserList> */}
+          <Alive></Alive>
 				</p>
 				{/* <a
 					className="App-link"
