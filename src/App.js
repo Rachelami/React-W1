@@ -22,6 +22,7 @@ function App() {
           {/* <Column></Column> */}
 					{/* <UserList></UserList> */}
           <Alive></Alive>
+          
 				</p>
 				{/* <a
 					className="App-link"
