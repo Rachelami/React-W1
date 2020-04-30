@@ -9,20 +9,9 @@ class Checkbox extends React.Component {
 	}
 
 	ifclick = () => {
-        
-        // this.state.status = !this.state.status;
-        // console.log(this.state.status);
-        
             this.setState({ status: !this.state.status })
-        // return "work"
     }
-	// 	// if (this.state.status === false) {
-	// 	// 	this.setState({ status: true });
-	// 	// 	// this.state.status && <Timer /> ;
-	// 	// } else {
-	// 	// 	this.setState({ status: false });
-	// 	// }
-	// };
+
 
 	render() {
 		return (
@@ -33,9 +22,6 @@ class Checkbox extends React.Component {
                     id="defaultUnchecked"
 					onClick={this.ifclick}
 				></input>
-
-				{/* <label class="custom-control-label" for="defaultUnchecked">	
-				</label> */}
 				{this.state.status&&<Timer/>}
 			</div>
 		);
@@ -66,12 +52,6 @@ class Timer extends React.Component {
 			<p>
 				<div>Hello</div>
 				<span> {time >= 1 && <h1>I'm alive</h1>}</span>
-
-				{/* { click%2 && <span> {time >= 1 && <h1>I'm alive</h1>}</span>} */}
-				{/* {click%2 == 0 ? //if click is even
-				<span> {time >= 1 && <h1>I'm alive</h1>}</span> //print i'm alive after 1 sec
-                : click = click //else, do nothing 
-                } */}
 			</p>
 		);
 	}
