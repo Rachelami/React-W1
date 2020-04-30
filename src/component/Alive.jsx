@@ -1,24 +1,28 @@
 import React from "react";
 
-
 class Checkbox extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-            status: "False",
+			status: false,
 		};
 	}
 
-    ifclick() {
-        if (this.state.status === "False") {
-            this.state.status = "True"
-            // this.state.status && <Timer /> ;
-        }
-        else {
-            this.state.status = "False"
-        }
+	ifclick = () => {
+        
+        // this.state.status = !this.state.status;
+        // console.log(this.state.status);
+        
+            this.setState({ status: !this.state.status })
+        // return "work"
     }
-
+	// 	// if (this.state.status === false) {
+	// 	// 	this.setState({ status: true });
+	// 	// 	// this.state.status && <Timer /> ;
+	// 	// } else {
+	// 	// 	this.setState({ status: false });
+	// 	// }
+	// };
 
 	render() {
 		return (
@@ -26,14 +30,13 @@ class Checkbox extends React.Component {
 				<input
 					type="checkbox"
 					class="custom-control-input"
-					id="defaultUnchecked"
-					onClick={ ifclick() }
+                    id="defaultUnchecked"
+					onClick={this.ifclick}
 				></input>
 
 				{/* <label class="custom-control-label" for="defaultUnchecked">	
 				</label> */}
-                {this.state.status && <Timer /> 
-}
+				{this.state.status&&<Timer/>}
 			</div>
 		);
 	}
@@ -62,10 +65,10 @@ class Timer extends React.Component {
 		return (
 			<p>
 				<div>Hello</div>
-                <span> {time >= 1 && <h1>I'm alive</h1>}</span>
+				<span> {time >= 1 && <h1>I'm alive</h1>}</span>
 
-                {/* { click%2 && <span> {time >= 1 && <h1>I'm alive</h1>}</span>} */}
-                {/* {click%2 == 0 ? //if click is even
+				{/* { click%2 && <span> {time >= 1 && <h1>I'm alive</h1>}</span>} */}
+				{/* {click%2 == 0 ? //if click is even
 				<span> {time >= 1 && <h1>I'm alive</h1>}</span> //print i'm alive after 1 sec
                 : click = click //else, do nothing 
                 } */}

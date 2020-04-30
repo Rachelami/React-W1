@@ -115,3 +115,8 @@
 .DataList{
   border: 1px solid black;
 }
+
+.custom-control-input{
+  z-index: 1;
+  opacity: 1;
+}
